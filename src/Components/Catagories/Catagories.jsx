@@ -12,8 +12,8 @@ const Catagories = () => {
           },[])
 
           return (
-          <div>
-          <div className="my-6">
+          <div className="max-w-7xl mx-auto">
+          <div className="my-6 ">
           <h1 className="text-center text-4xl font-medium mb-2">Job Category List</h1>
           <p className="text-center text-xl">Explore thousands of job opportunities with all the information you need. Its your future</p>
           </div>
