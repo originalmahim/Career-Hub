@@ -9,7 +9,7 @@ const Header = () => {
       </>
   
           return (
-            <div>
+            <div className="overflow-x-hidden">
             <div className="bg-gradient-to-r from-violet-100 via-white to-violet-100">
             <div className="navbar max-w-7xl mx-auto mt-2">
             <div className="navbar-start">

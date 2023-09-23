@@ -25,7 +25,7 @@ const Statistics = () => {
           <p className="text-center text-xl">Explore thousands of job opportunities with all the information you need. Its your future</p>
           </div>
           
-           <div className="grid grid-cols-2 gap-8">
+           <div className="grid grid-cols-2 lg:gap-8 gap-4 md:px-4">
           {
            jobs.slice(0,dataload).map(job => <Featuredjobs key={job.id} job = {job} ></Featuredjobs>)
           }

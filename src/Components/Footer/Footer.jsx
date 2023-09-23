@@ -32,7 +32,7 @@ const Footer = () => {
   </nav>
     </div>
       <hr />
-      <div className="lg:flex my-4 justify-between">
+      <div className="lg:flex md:flex my-4 justify-between">
         <h1>@2023 CareerHub. All Rights Reserved</h1>
         <h1>Powered by CareerHub</h1>
       </div>

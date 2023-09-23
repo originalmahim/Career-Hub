@@ -14,11 +14,11 @@ const Appliedjobs = () => {
              console.log( jobs, storedJobs,jobsApplied);
              setAppliedjob(jobsApplied)
             }
-          },[])
+          },[jobs])
           
 
           return (
-          <div>
+          <div className="max-w-7xl mx-auto my-5 md:px-6">
            <h1 className="text-xl font-bold">Applied Jobs: {appliedjob.length}</h1>
            <div>
             {
