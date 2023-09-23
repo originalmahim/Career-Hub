@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Featuredjobs from "./Featuredjobs";
+import Catagories from "../Catagories/Catagories";
 
 const Statistics = () => {
           const [jobs,setJobs] = useState([]);
@@ -15,8 +16,9 @@ const Statistics = () => {
           },[])
           return (
           <div className="mb-8">
+            <Catagories></Catagories>
           <div className="my-6">
-          <h1 className="text-center text-5xl font-medium mb-2">Featured Jobs</h1>
+          <h1 className="text-center text-4xl font-medium mb-2">Featured Jobs</h1>
           <p className="text-center text-xl">Explore thousands of job opportunities with all the information you need. Its your future</p>
           </div>
           
