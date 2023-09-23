@@ -1,12 +1,16 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaDollarSign,FaLocationArrow,FaPhoneAlt,FaMailBulk } from 'react-icons/fa';
 import { PiBagSimpleBold } from 'react-icons/pi';
-
+import { saveJobApplication } from   '../../utility/localstorage'
 const Jobdetails = () => {
           const jobs = useLoaderData();
           const {id} = useParams();
           const job = jobs.find(job => job.id == id);
-          console.log(job.contact_information);
+          
+          const handleApplyJob = () =>{
+            saveJobApplication(id);
+        }
+
           return (
           <div className="grid grid-cols-4 gap-4 lg:my-32">
             <div className="border col-span-3 rounded-md px-4">
@@ -30,7 +34,7 @@ const Jobdetails = () => {
           <h1 className="my-2 flex items-center gap-2"><FaMailBulk></FaMailBulk> <span className="font-semibold">Email:</span> {job.contact_information.email}</h1>
           <h1 className=" flex items-center gap-2"> <FaLocationArrow></FaLocationArrow> <span className="font-semibold">Address:</span> <br /> {job.contact_information.address}</h1>
           
-          <button className="btn btn-primary w-full my-4">Apply Now</button>
+          <button onClick={handleApplyJob} className="btn btn-primary w-full my-4">Apply Now</button>
           </div>        
           </div>
           );
