@@ -5,10 +5,11 @@ import { saveJobApplication } from   '../../utility/localstorage'
 const Jobdetails = () => {
           const jobs = useLoaderData();
           const {id} = useParams();
-          const job = jobs.find(job => job.id == id);
+          const idInt = parseInt(id)
+          const job = jobs.find(job => job.id == idInt);
           
           const handleApplyJob = () =>{
-            saveJobApplication(id);
+            saveJobApplication(idInt);
         }
 
           return (
